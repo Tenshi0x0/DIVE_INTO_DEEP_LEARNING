@@ -1,0 +1,31 @@
+## Q1
+
+1.
+
+The goal can be considered as the parabola w.r.t. $b$.
+
+Hence, the point of minimum is $\frac{\sum x_i}{n}$.
+
+2.
+
+
+Assume a Gaussian noise model
+$$
+x_i = b + \varepsilon_i,\quad \varepsilon_i \stackrel{iid}{\sim} \mathcal N(0,\sigma^2),
+$$
+
+then the likelihood of (b) is
+$$
+p(x_1,\dots,x_n\mid b)=\prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}
+\exp\left(-\frac{(x_i-b)^2}{2\sigma^2}\right).
+$$
+
+So, maximizing this likelihood over $b$ is equivalent to minimizing $\sum (x_i-b)^2$.
+
+3.
+
+Notice that for a single term $|x_i - b|$, the gradient w.r.t. $b$ is $-1$ when $b < x_i$ and $1$ when $b>x_i$. To make the sum of graidient $0$, $b$ should be the median of $\{x_i\}$.
+
+Thus, $b^\star$ is **any median** of $\{x_i\}$.
+
+## Q4
