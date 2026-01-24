@@ -29,3 +29,11 @@ Notice that for a single term $|x_i - b|$, the gradient w.r.t. $b$ is $-1$ when 
 Thus, $b^\star$ is **any median** of $\{x_i\}$.
 
 ## Q4
+
+1.
+
+When $X^\top X$ is **singular**, the closed-form formula
+$$
+\hat\beta=(X^\top X)^{-1}X^\top y
+$$
+does not exist.
