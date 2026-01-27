@@ -54,3 +54,26 @@ It can bias the fitted model because the data matrix changed.
 
 3.
 
+Here,
+
+$$
+\tilde X = X + E,\quad E_{ij}\sim \mathcal N(0,\sigma^2)\ \text{i.i.d.}
+$$
+
+We have
+
+$$
+\tilde X^\top \tilde X = (X+E)^\top (X+E)=X^\top X + X^\top E + E^\top X + E^\top E.
+$$
+
+And,
+
+$$
+\mathbb E[X^\top E]=0,\quad \mathbb E[E^\top X]=0,\quad \mathbb E[E^\top E] = n\sigma^2 I_d.
+$$
+
+Hence,
+
+$$
+\mathbb E[\tilde X^\top \tilde X] = X^\top X + n\sigma^2 I_d\
+$$
